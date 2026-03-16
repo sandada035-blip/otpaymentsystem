@@ -1,2 +1,0 @@
-create extension if not exists "uuid-ossp";
-create table if not exists payments (id uuid primary key default uuid_generate_v4(), student_id uuid, student_name text, teacher_name text, total_amount numeric default 0, teacher_share numeric default 0, school_share numeric default 0, payment_date date, created_at timestamp default now());

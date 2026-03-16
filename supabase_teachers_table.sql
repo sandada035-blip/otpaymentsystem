@@ -1,2 +1,0 @@
-create extension if not exists "uuid-ossp";
-create table if not exists teachers (id uuid primary key default uuid_generate_v4(), name text, gender text, class_name text, phone text, created_at timestamp default now());
